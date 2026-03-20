@@ -4,7 +4,7 @@ import STTextView
 
 // tree-sitter-xcframework
 //import TreeSitter
-import TreeSitterResource
+@_exported import TreeSitterResource
 
 public struct NeonPlugin: STPlugin {
     private let theme: Theme
