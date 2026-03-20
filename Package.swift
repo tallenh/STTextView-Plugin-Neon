@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "STTextView-Plugin-Neon",
             targets: ["STPluginNeon"]),
+        .library(
+            name: "TreeSitterResource",
+            targets: ["TreeSitterResource"]),
     ],
     dependencies: [
         .package(url: "https://github.com/krzyzanowskim/STTextView", from: "2.2.2"),
