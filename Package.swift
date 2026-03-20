@@ -84,8 +84,10 @@ let package = Package(
                 .target(name: "TreeSitterTOMLQueries"),
                 .target(name: "TreeSitterTypeScript"),
                 .target(name: "TreeSitterTypeScriptQueries"),
+                .target(name: "TreeSitterLua"),
+                .target(name: "TreeSitterLuaQueries"),
                 .target(name: "TreeSitterYAML"),
-                .target(name: "TreeSitterYAMLQueries")            
+                .target(name: "TreeSitterYAMLQueries")
             ]
         ),
         .target(name: "TreeSitterAstro", cSettings: [.headerSearchPath("src")]),

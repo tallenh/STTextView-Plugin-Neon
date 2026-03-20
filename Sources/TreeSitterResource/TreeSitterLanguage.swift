@@ -22,6 +22,8 @@ import TreeSitterJavaScript
 import TreeSitterJavaScriptQueries
 import TreeSitterJSON
 import TreeSitterJSONQueries
+import TreeSitterLua
+import TreeSitterLuaQueries
 import TreeSitterMarkdown
 import TreeSitterMarkdownQueries
 import TreeSitterPHP
@@ -54,6 +56,7 @@ public enum TreeSitterLanguage: CaseIterable, Hashable {
     case java
     case javascript
     case json
+    case lua
     case markdown
     case php
     case python
@@ -87,6 +90,8 @@ public enum TreeSitterLanguage: CaseIterable, Hashable {
             tree_sitter_javascript()
         case .json:
             tree_sitter_json()
+        case .lua:
+            tree_sitter_lua()
         case .markdown:
             tree_sitter_markdown()
         case .php:
@@ -132,6 +137,8 @@ public enum TreeSitterLanguage: CaseIterable, Hashable {
             TreeSitterJavaScriptQueries.Query.highlightsFileURL
         case .json:
             TreeSitterJSONQueries.Query.highlightsFileURL
+        case .lua:
+            TreeSitterLuaQueries.Query.highlightsFileURL
         case .markdown:
             TreeSitterMarkdownQueries.Query.highlightsFileURL
         case .php:
@@ -176,6 +183,8 @@ public enum TreeSitterLanguage: CaseIterable, Hashable {
         case .javascript:
             TreeSitterJavaScriptQueries.Query.localsFileURL
         case .json:
+            nil
+        case .lua:
             nil
         case .markdown:
             nil
